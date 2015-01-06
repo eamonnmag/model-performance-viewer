@@ -1,0 +1,63 @@
+body {
+    width:100%;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #BDC3C7;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font: .7em sans-serif;
+    fill: #BDC3C7;
+}
+
+circle {
+    fill-opacity: 1;
+    cursor: pointer;
+}
+
+
+.detail-text, .time-text {
+    font: .6em sans-serif;
+    fill: #7F8C8D;
+    font-weight: bolder;
+}
+
+.legend {
+    font: .7em sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.legend h4 {
+    margin: 5px;
+}
+
+.legend-table {
+    color: #7F8C8D;
+}
+
+
+.brush .extent {
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.resize {
+    display: inline !important; /* show when empty */
+    fill: #666;
+    fill-opacity: .8;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.model-legend-item {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

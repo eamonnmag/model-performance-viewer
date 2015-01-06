@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Model View</title>
+
+    <style>
+        .legend {
+            width: 240px;
+            height: 210px;
+            display: inline-block;
+        }
+
+        .legend h4 {
+            font-weight: lighter;
+            font-size: 1.3em;
+            color: #7F8C8D;
+        }
+
+        #chart {
+            float:left;
+            width: 600px;
+            height: 210px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="chart">
+</div>
+<div class="legend">
+    <h4>Models</h4>
+    <div id="legend"></div>
+</div>
+
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src="assets/js/model_performance_viewer.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/>
+
+<script>
+    ModelViewer.functions.draw_chart("assets/data/data.json", "#chart", "#legend", 600, 60);
+</script>
+
+
+</html>
